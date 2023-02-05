@@ -13,4 +13,5 @@
         <servlet-name>BMIServlet</servlet-name>
         <url-pattern>/bmi</url-pattern>
     </servlet-mapping>
+
 </web-app>
