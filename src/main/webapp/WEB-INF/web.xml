@@ -13,5 +13,8 @@
         <servlet-name>BMIServlet</servlet-name>
         <url-pattern>/bmi</url-pattern>
     </servlet-mapping>
+    <error-page>
+        <location>/file-not-found.html</location>
+    </error-page>
 
 </web-app>

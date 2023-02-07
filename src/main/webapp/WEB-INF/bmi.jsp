@@ -7,6 +7,9 @@
     }
     String height = results.containsKey("height") ? results.get("height") : "";
     String weight = results.containsKey("weight") ? results.get("weight") : "";
+    String heightFilled = results.containsKey("height") ? "filled" : "";
+    String weightFilled = results.containsKey("weight") ? "filled" : "";
+
     String heightError = results.containsKey("heightError") ? results.get("heightError") : "";
     String weightError = results.containsKey("weightError") ? results.get("weightError") : "";
     String bmi = results.containsKey("bmi") ? results.get("bmi") : "";
@@ -28,14 +31,14 @@
 <div class="form-container">
     <form action="bmi" method="post" class="cool-form">
         <div class="input-container">
-            <input type="text" name="height" id="height" value="<%= height %>" />
+            <input type="text" name="height" id="height" class="<%= heightFilled %>" value="<%= height %>" />
             <label for="height">Height in inches</label>
         </div>
         <div class="message-container">
             <p><%= heightError %></p>
         </div>
         <div class="input-container">
-            <input type="text" name="weight" id="weight" value="<%= weight %>" />
+            <input type="text" name="weight" id="weight" class="<%= weightFilled %>" value="<%= weight %>" />
             <label for="weight">Weight in pounds</label>
         </div>
         <div class="message-container">

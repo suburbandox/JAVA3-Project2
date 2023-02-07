@@ -17,11 +17,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    flex-direction: column;
 }
 
 .input-container {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     position: relative;
 }
 .input-container input {
@@ -84,12 +84,10 @@ input[type=submit]:hover, input[type=submit]:focus {
     border-color: cornflowerblue;
     outline: none;
 }
-input[type=submit]:click {
-    background-color: cornflowerblue;
-}
+
 .message-container p {
     color: red;
-    margin: 5px 0 0;
+    margin: 0 0 2rem;
     font-style: italic;
     font-size: 0.9rem;
 }

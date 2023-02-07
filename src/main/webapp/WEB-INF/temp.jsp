@@ -49,6 +49,8 @@
 
     <input type="submit" value="Calculate Temp" />
 </form>
+
+
 <p>The conversion formula and result:  <%=   equals%></p>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
