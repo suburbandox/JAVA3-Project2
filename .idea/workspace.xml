@@ -10,15 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3781e5ed-0f4d-4c51-b60a-537abf9ef55f" name="Changes" comment="Chapters 3 and 4">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/file-not-found.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch3and4/BMIServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch3and4/BMIServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch3and4/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch3and4/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bmi.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bmi.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/temp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/temp.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles/bmi.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles/bmi.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +188,8 @@
       <workItem from="1675276260062" duration="21009000" />
       <workItem from="1675466648135" duration="19423000" />
       <workItem from="1675706656108" duration="6817000" />
-      <workItem from="1675729529048" duration="936000" />
+      <workItem from="1675729529048" duration="1674000" />
+      <workItem from="1675880783409" duration="1190000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1674610505060</created>
@@ -225,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675617626724</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Chapters 3 and 4">
+      <created>1675730617736</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675730617736</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
