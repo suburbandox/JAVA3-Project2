@@ -9,9 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3781e5ed-0f4d-4c51-b60a-537abf9ef55f" name="Changes" comment="no env">
+    <list default="true" id="3781e5ed-0f4d-4c51-b60a-537abf9ef55f" name="Changes" comment="new 404">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch5/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch5/ViewUsersServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data_access/DAO_MySQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data_access/UserDAO_MySQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/twilio/Twilio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/message.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/java3_project2_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/java3_project2_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java3-project2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java3-project2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kline/java3project2/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kline/java3project2/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/twilio/SMSout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twilio/SMSOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +37,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="HTML File" />
+        <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,7 +81,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -193,6 +207,10 @@
       <workItem from="1675880783409" duration="5718000" />
       <workItem from="1676061976341" duration="2355000" />
       <workItem from="1676135220543" duration="3000" />
+      <workItem from="1676215814767" duration="35000" />
+      <workItem from="1676312053419" duration="3599000" />
+      <workItem from="1676315673138" duration="25118000" />
+      <workItem from="1676571517741" duration="6933000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1674610505060</created>
@@ -236,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675883263094</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="new 404">
+      <created>1676215838410</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676215838410</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +285,8 @@
     <MESSAGE value="Temperature Conversion Calculator" />
     <MESSAGE value="Chapters 3 and 4" />
     <MESSAGE value="no env" />
-    <option name="LAST_COMMIT_MESSAGE" value="no env" />
+    <MESSAGE value="new 404" />
+    <option name="LAST_COMMIT_MESSAGE" value="new 404" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

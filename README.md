@@ -1,5 +1,4 @@
-az webapp deploy --resource-group java-kline --name ethan-java --src-path ./target/java3-project2-1.0-SNAPSHOT
-.war --type war
+az webapp deploy --resource-group java-kline --name ethan-java --src-path ./target/java3-project2-1.0-SNAPSHOT.war --type war
 
 # Final Project
 
