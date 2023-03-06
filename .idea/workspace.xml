@@ -9,21 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3781e5ed-0f4d-4c51-b60a-537abf9ef55f" name="Changes" comment="new 404">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch5/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch5/ViewUsersServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/data_access/DAO_MySQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/data_access/UserDAO_MySQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/twilio/Twilio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/message.jsp" afterDir="false" />
+    <list default="true" id="3781e5ed-0f4d-4c51-b60a-537abf9ef55f" name="Changes" comment="added calls to message app">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch5/AddUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data_access/CountryDAO_CSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/CountriesServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ch5/add-user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ch5/view-users.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/countries.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/countries.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/java3_project2_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/java3_project2_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java3-project2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java3-project2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kline/java3project2/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kline/java3project2/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/twilio/SMSout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twilio/SMSOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch5/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch5/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch5/ViewUsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch5/ViewUsersServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data_access/DAO_MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data_access/DAO_MySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data_access/UserDAO_MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data_access/UserDAO_MySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/twilio/Twilio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twilio/Twilio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,9 +43,9 @@
         <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -86,6 +89,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\clwoo\Desktop\Ethan School\Spring 2023\java3\java3-project2\src\main\webapp\WEB-INF\funstuff" />
       <recent name="C:\Users\clwoo\Desktop\Ethan School\Spring 2023\java3\java3-project2\src\main\resources" />
       <recent name="C:\Users\clwoo\Desktop\Ethan School\Spring 2023\java3\java3-project2\src\main\webapp\WEB-INF" />
     </key>
@@ -210,7 +214,11 @@
       <workItem from="1676215814767" duration="35000" />
       <workItem from="1676312053419" duration="3599000" />
       <workItem from="1676315673138" duration="25118000" />
-      <workItem from="1676571517741" duration="6933000" />
+      <workItem from="1676571517741" duration="8036000" />
+      <workItem from="1676903203602" duration="8333000" />
+      <workItem from="1677522277278" duration="20078000" />
+      <workItem from="1677701791163" duration="1210000" />
+      <workItem from="1678126783448" duration="5816000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1674610505060</created>
@@ -261,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676215838410</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added calls to message app">
+      <created>1676592901372</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676592901372</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +301,8 @@
     <MESSAGE value="Chapters 3 and 4" />
     <MESSAGE value="no env" />
     <MESSAGE value="new 404" />
-    <option name="LAST_COMMIT_MESSAGE" value="new 404" />
+    <MESSAGE value="added calls to message app" />
+    <option name="LAST_COMMIT_MESSAGE" value="added calls to message app" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

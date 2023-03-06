@@ -1,6 +1,6 @@
-package ch5;
+package com.hauschildt.ch5;
 
-
+import data_access.DAO_MySQL;
 import data_access.UserDAO_MySQL;
 
 import javax.servlet.*;
@@ -13,7 +13,8 @@ public class ViewUsersServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         UserDAO_MySQL user_data = new UserDAO_MySQL();
-        user_data.getAllUsers();
+        request.setAttribute("users",user_data.getAll());
+        request.getRequestDispatcher("WEB-INF/ch5/view-users.jsp").forward(request,response);
     }
 
     @Override
