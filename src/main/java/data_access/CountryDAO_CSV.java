@@ -23,8 +23,13 @@ public class CountryDAO_CSV {
                 if(lineCount != 1) {
                     String name = dataStr[0];
                     String continent = dataStr[2];
+                    String pic = dataStr[1].toLowerCase();
+                    String cap = dataStr[6];
+                    double lon = Double.parseDouble(dataStr[8]);
+                    double lat = Double.parseDouble(dataStr[7]);
+                    String sub = dataStr[3];
                     int population = Integer.parseInt(dataStr[5]);
-                    Country country = new Country(name, continent, population);
+                    Country country = new Country(name, continent, population,pic,cap,lon,lat,sub);
                     countries.add(country);
                 }
             }
