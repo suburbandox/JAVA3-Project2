@@ -96,6 +96,8 @@
                             data-lon="<%= country.getLon() %>"
                             data-cap="<%= country.getCap() %>"
                             data-sub="<%= country.getSub() %>"
+                            data-area="<%= country.getArea() %>"
+
 
                     >
                         Show more
@@ -103,7 +105,7 @@
                 </div>
             </div>
         </div>
-            <% double lat = country.getLat();%>
+
         <% } %>
     </div>
 </div>
@@ -120,35 +122,36 @@
                     <br>Population: <span class="modal-population"></span>
                     <br>Capital: <span class="modal-cap"></span>
                     <br>Sub-Region: <span class="modal-sub"></span>
+                    <span class="modal-map"></span>
                 </p>
-                <iframe
-                        <% String red = "-15.79" ;%>
-                <span class="modal-lat"></span>
-                        <% %>
-                        <% String lon = "-15.79" ;%>
+<%--                <iframe--%>
+<%--                        <% String red = "-15.79" ;%>--%>
+<%--                <span class="modal-lat"></span>--%>
+<%--                        <% %>--%>
+<%--                        <% String lon = "-15.79" ;%>--%>
 
 
-                        width="100%"
-                        height="480"
-                        frameborder="0"
-                        scrolling="no"
-                        marginheight="0"
-                        marginwidth="0"
-                        src="https://maps.google.com/maps?q=-15.79,-47.88&amp;z=4&amp;output=embed"
-                ></iframe>
-                <br>
-                <a
-                        href="https://www.google.com/maps/@-15.79,-47.88,4z"
-                        target="_blank">
-                    See full page map
-                </a>
-                <% String n = red;
-                    String s = String.format("https://maps.google.com/maps?q= %s,%s&amp;z=4&amp;output=embed","red","blue" );
-                    //s.replace("lat",co)
+<%--                        width="100%"--%>
+<%--                        height="480"--%>
+<%--                        frameborder="0"--%>
+<%--                        scrolling="no"--%>
+<%--                        marginheight="0"--%>
+<%--                        marginwidth="0"--%>
+<%--                        src="https://maps.google.com/maps?q=-15.79,-47.88&amp;z=4&amp;output=embed"--%>
+<%--                ></iframe>--%>
+<%--                <br>--%>
+<%--                <a--%>
+<%--                        href="https://www.google.com/maps/@-15.79,-47.88,4z"--%>
+<%--                        target="_blank">--%>
+<%--                    See full page map--%>
+<%--                </a>--%>
+<%--                <% String n = red;--%>
+<%--                    String s = String.format("https://maps.google.com/maps?q= %s,%s&amp;z=4&amp;output=embed","red","blue" );--%>
 
-                %>
-                <h5><%= s%></h5>
-                <h5>`this is a {0},"good"`</h5>
+
+<%--                %>--%>
+<%--                <h5><%= s%></h5>--%>
+<%--                <h5>`this is a {0},"good"`</h5>--%>
 
 
             </div>

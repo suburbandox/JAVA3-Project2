@@ -8,16 +8,17 @@ public class Country implements Comparable<Country>, Cloneable {
     private String capital;
 
     private  String pic;
-    private double  lat;
-    private  double lon;
+    private String  lat;
+    private  String lon;
     private String sub;
+    private String area;
 
 
     public Country() {
-        this("Unknown", "Unknown", 0,"Unknown","Unknown",1.1,1.1,"Unknown");
+        this("Unknown", "Unknown", 0,"Unknown","Unknown", "0", "0","Unknown","0");
     }
 
-    public Country(String name, String continent, int population,String pic,String capital,double lon,double lat,String sub) {
+    public Country(String name, String continent, int population,String pic,String capital,String lon,String lat,String sub,String area) {
         this.name = name;
         this.continent = continent;
         this.population = population;
@@ -26,10 +27,11 @@ public class Country implements Comparable<Country>, Cloneable {
         this.lat = lat;
         this.lon = lon;
         this.sub = sub;
+        this.area = area;
     }
-    public  double getLon(){return lon;}
-    public double getLat(){return lat;}
-
+    public  String getLon(){return lon;}
+    public String getLat(){return lat;}
+    public String getArea(){return area;}
     public  String getSub(){return sub;}
 
     public String getName() {
@@ -41,6 +43,7 @@ public class Country implements Comparable<Country>, Cloneable {
     }
     public String getPic() {return pic;}
     public  String getCap(){return  capital;}
+
 
     public String getContinent() {
         return continent;

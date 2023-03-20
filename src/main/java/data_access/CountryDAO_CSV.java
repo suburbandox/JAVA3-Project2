@@ -25,11 +25,12 @@ public class CountryDAO_CSV {
                     String continent = dataStr[2];
                     String pic = dataStr[1].toLowerCase();
                     String cap = dataStr[6];
-                    double lon = Double.parseDouble(dataStr[8]);
-                    double lat = Double.parseDouble(dataStr[7]);
+                    String lon = dataStr[8];
+                    String lat = dataStr[7];
                     String sub = dataStr[3];
+                    String area = dataStr[4];
                     int population = Integer.parseInt(dataStr[5]);
-                    Country country = new Country(name, continent, population,pic,cap,lon,lat,sub);
+                    Country country = new Country(name, continent, population,pic,cap,lon,lat,sub,area);
                     countries.add(country);
                 }
             }
