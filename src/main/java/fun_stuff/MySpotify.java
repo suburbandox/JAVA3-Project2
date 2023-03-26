@@ -72,7 +72,7 @@ public class MySpotify {
         return artists;
     }
 
-    public static Album[] searchAlbums(String artist) {
+    public static Album[] getAlbums(String artist) {
         SpotifyApi spotifyApi = new SpotifyApi.Builder()
                 .setAccessToken(getAccessToken())
                 .build();
@@ -90,7 +90,7 @@ public class MySpotify {
 
             // Example Only. Never block in production code.
             final Paging<AlbumSimplified> albumSimplifiedPaging = pagingFuture.join();
-
+            //albums =albumSimplifiedPaging.getItems();
             System.out.println("Total: " + albumSimplifiedPaging.getItems());
         } catch (CompletionException e) {
             System.out.println("Error: " + e.getCause().getMessage());

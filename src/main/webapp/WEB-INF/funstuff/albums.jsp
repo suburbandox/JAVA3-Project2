@@ -9,10 +9,11 @@
 <%@ page import="se.michaelthelin.spotify.model_objects.specification.Artist" %>
 <%@ page import="org.apache.commons.text.WordUtils" %>
 <%@ page import="se.michaelthelin.spotify.model_objects.specification.Album" %>
+<%@ page import="se.michaelthelin.spotify.model_objects.specification.AlbumSimplified" %>
 
 <%
     String artist = (String)request.getAttribute("artist");
-    Album[] albums = (Album[])request.getAttribute("albums");
+    AlbumSimplified[] albums = (AlbumSimplified[])request.getAttribute("albums");
 %>
 <!doctype html>
 <html lang="en">
