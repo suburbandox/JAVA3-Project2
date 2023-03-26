@@ -9,13 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3781e5ed-0f4d-4c51-b60a-537abf9ef55f" name="Changes" comment="some fun stuff">
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="3781e5ed-0f4d-4c51-b60a-537abf9ef55f" name="Changes" comment="some fun stuff 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/AlbumsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/ArtistServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/MySpotify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/albums.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/artist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/java3_project2_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/java3_project2_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data_access/CountryDAO_CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data_access/CountryDAO_CSV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fun_stuff/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/countries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/countries.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/countries.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/countries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java3-project2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java3-project2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +35,9 @@
         <option value="CSS File" />
         <option value="HTML File" />
         <option value="Interface" />
+        <option value="JavaScript File" />
         <option value="Class" />
         <option value="Jsp File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -214,7 +218,7 @@
       <workItem from="1678143465208" duration="18438000" />
       <workItem from="1678407808176" duration="3930000" />
       <workItem from="1679248587051" duration="22096000" />
-      <workItem from="1679332549445" duration="336000" />
+      <workItem from="1679332549445" duration="21310000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1674610505060</created>
@@ -286,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679272395586</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="some fun stuff 2">
+      <created>1679333289836</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679333289836</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +325,8 @@
     <MESSAGE value="added calls to message app" />
     <MESSAGE value="added Assignment 5" />
     <MESSAGE value="some fun stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="some fun stuff" />
+    <MESSAGE value="some fun stuff 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="some fun stuff 2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
