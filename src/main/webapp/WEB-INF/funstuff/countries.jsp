@@ -1,6 +1,8 @@
 <%@ page import="fun_stuff.Country" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.text.DecimalFormat" %>
+<%@ page import="java.util.Scanner" %>
+<%@ page import="java.io.*" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     List<Country> countries = (List<Country>)request.getAttribute("countries");
@@ -69,6 +71,9 @@
     </nav>
 
 </header>
+
+<img src="image/download.jpg"alt="kirby">
+<img src="image/kirby.png"alt="kirby">
 <div class="container my-4">
     <p class="lead">Showing <%= countries.size() %> countr<%= countries.size() == 1 ? "y" : "ies" %></p>
     <div class="row">

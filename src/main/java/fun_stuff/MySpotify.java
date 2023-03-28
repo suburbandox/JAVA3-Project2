@@ -72,7 +72,7 @@ public class MySpotify {
         return artists;
     }
 
-    public static Album[] getAlbums(String artist) {
+    public static AlbumSimplified[] getAlbums(String artist) {
         SpotifyApi spotifyApi = new SpotifyApi.Builder()
                 .setAccessToken(getAccessToken())
                 .build();
@@ -82,7 +82,7 @@ public class MySpotify {
 //          .offset(0)
 //          .market(CountryCode.SE)
                 .build();
-        Album[] albums = null;
+        AlbumSimplified[] albums = null;
         try {
             final CompletableFuture<Paging<AlbumSimplified>> pagingFuture = getArtistsAlbumsRequest.executeAsync();
 
@@ -90,13 +90,13 @@ public class MySpotify {
 
             // Example Only. Never block in production code.
             final Paging<AlbumSimplified> albumSimplifiedPaging = pagingFuture.join();
-            //albums =albumSimplifiedPaging.getItems();
+            albums =albumSimplifiedPaging.getItems();
             System.out.println("Total: " + albumSimplifiedPaging.getItems());
         } catch (CompletionException e) {
             System.out.println("Error: " + e.getCause().getMessage());
         } catch (CancellationException e) {
             System.out.println("Async operation cancelled.");
         }
-        return albums;
+        return  albums;
     }
 }

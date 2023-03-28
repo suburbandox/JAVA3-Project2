@@ -9,13 +9,13 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "AlbumsServlet ", value = "/AlbumsServlet ")
+@WebServlet(name = "AlbumsServlet", value = "/albums")
 public class AlbumsServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String artist = request.getParameter("artist");
         request.setAttribute("artist", artist);
-        Album[] albums = MySpotify.getAlbums(artist);
+        AlbumSimplified[] albums = MySpotify.getAlbums(artist);
         request.setAttribute("albums", albums);
         request.getRequestDispatcher("WEB-INF/funstuff/albums.jsp").forward(request, response);
     }
