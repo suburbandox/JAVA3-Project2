@@ -1,20 +1,14 @@
-<%--
+<%@ page import="se.michaelthelin.spotify.model_objects.specification.TrackSimplified" %><%--
   Created by IntelliJ IDEA.
   User: clwoo
-  Date: 3/26/2023
-  Time: 11:21 AM
+  Date: 3/28/2023
+  Time: 7:54 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="se.michaelthelin.spotify.model_objects.specification.Artist" %>
-<%@ page import="org.apache.commons.text.WordUtils" %>
-<%@ page import="se.michaelthelin.spotify.model_objects.specification.Album" %>
-<%@ page import="se.michaelthelin.spotify.model_objects.specification.AlbumSimplified" %>
-
 <%
-    String artist = (String)request.getAttribute("artist");
-    AlbumSimplified[] albums = (AlbumSimplified[])request.getAttribute("albums");
-    int num = 1;
+    String album = (String)request.getAttribute("album");
+    TrackSimplified[] tracks = (TrackSimplified[])request.getAttribute("tracks");
 %>
 <!doctype html>
 <html lang="en">
@@ -26,7 +20,6 @@
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
     <div class="container-fluid">
         <a class="navbar-brand" href="artist"><strong>Spotify Music App</strong></a>
@@ -43,11 +36,12 @@
         </div>
     </div>
 </nav>
+
 <main class="container">
     <section class="py-5 text-center container">
         <div class="row py-lg-2">
             <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">Albums</h1>
+                <h1 class="fw-light"><%= album%></h1>
                 <p class="lead text-muted">Click the album's name below to view their track</p>
             </div>
         </div>
@@ -56,41 +50,37 @@
     <table class="table">
         <thead>
         <tr>
-            <th scope="col">#</th>
-            <th scope="col">Image</th>
+<%--            <th scope="col">Image</th>--%>
             <th scope="col">Name</th>
-<%--            <th scope="col">Genres</th>--%>
-<%--            <th scope="col">Followers</th>--%>
-<%--            <th scope="col">Popularity</th>--%>
-<%--            <th scope="col">Spotify</th>--%>
+            <%--            <th scope="col">Genres</th>--%>
+            <%--            <th scope="col">Followers</th>--%>
+            <%--            <th scope="col">Popularity</th>--%>
+            <%--            <th scope="col">Spotify</th>--%>
         </tr>
         </thead>
         <tbody class="table-group-divider">
-        <% for(AlbumSimplified album: albums) { %>
+        <% for(TrackSimplified track: tracks) { %>
         <tr>
-            <td><%=num%> </td>
-            <td>
-                <% if(album.getImages().length > 0) { %>
-                <img src="<%= album.getImages()[0].getUrl() %>" width="100" alt="<%= album.getName() %>">
-                <% } else { %>
-                <img src="https://picsum.photos/id/56/100/75" alt="<%= album.getName() %>">
-                <% } %>
-                <% num++; %>
-            </td>
-
-            <td><a href="tracks?album=<%= album.getId() %>"><%= album.getName() %></a></td>
 <%--            <td>--%>
-<%--                <% for(String genre: artist.getGenres()) { %>--%>
-<%--                <%= WordUtils.capitalize(genre) %><br>--%>
+<%--                <% if(album.getImages().length > 0) { %>--%>
+<%--                <img src="<%= album.getImages()[0].getUrl() %>" width="100" alt="<%= album.getName() %>">--%>
+<%--                <% } else { %>--%>
+<%--                <img src="https://picsum.photos/id/56/100/75" alt="<%= album.getName() %>">--%>
 <%--                <% } %>--%>
 <%--            </td>--%>
-<%--            <td class="text-end">--%>
-<%--                <%= String.format("%,.0f", (double)artist.getFollowers().getTotal()) %>--%>
-<%--            </td>--%>
-<%--            <td class="text-end"><%= artist.getPopularity() %> of 100</td>--%>
-<%--            <td>--%>
-<%--                <a class="btn btn-success" href="<%= artist.getExternalUrls().getExternalUrls().get("spotify") %>" target="_blank" role="button">See more info</a>--%>
-<%--            </td>--%>
+            <td><a href="data?track=<%= track.getId() %>"><%= track.getName()%></a></td>
+            <%--            <td>--%>
+            <%--                <% for(String genre: artist.getGenres()) { %>--%>
+            <%--                <%= WordUtils.capitalize(genre) %><br>--%>
+            <%--                <% } %>--%>
+            <%--            </td>--%>
+            <%--            <td class="text-end">--%>
+            <%--                <%= String.format("%,.0f", (double)artist.getFollowers().getTotal()) %>--%>
+            <%--            </td>--%>
+            <%--            <td class="text-end"><%= artist.getPopularity() %> of 100</td>--%>
+            <%--            <td>--%>
+            <%--                <a class="btn btn-success" href="<%= artist.getExternalUrls().getExternalUrls().get("spotify") %>" target="_blank" role="button">See more info</a>--%>
+            <%--            </td>--%>
         </tr>
         <% } %>
         </tbody>

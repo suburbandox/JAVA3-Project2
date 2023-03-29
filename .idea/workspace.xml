@@ -9,27 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3781e5ed-0f4d-4c51-b60a-537abf9ef55f" name="Changes" comment="adding a album servlet">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/ChatServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/MessageDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/chat.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/download.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/kirby.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/chat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/chat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/text/happy.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/java3_project2_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/java3_project2_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="3781e5ed-0f4d-4c51-b60a-537abf9ef55f" name="Changes" comment="adding a album servlet 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/MessageEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/MessageEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/SongServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/TrackServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/data.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/tracks.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/spotify.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java3-project2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java3-project2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fun_stuff/AlbumsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/AlbumsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fun_stuff/ArtistServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/ArtistServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fun_stuff/MySpotify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/MySpotify.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/albums.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/albums.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/countries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/countries.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/countries.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/countries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/chat.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +36,9 @@
       <list>
         <option value="HTML File" />
         <option value="Interface" />
+        <option value="CSS File" />
         <option value="Jsp File" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="Class" />
       </list>
     </option>
@@ -98,6 +90,38 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
+      <option name="appName" />
+      <option name="appServicePlanName" />
+      <option name="appServicePlanResourceGroup" />
+      <option name="appSettingsKey" value="e1abb1f2-c2b3-4a65-978a-ebf3598b151a" />
+      <option name="artifact" />
+      <option name="autoPort" value="true" />
+      <option name="debugOptions" />
+      <option name="deployment" />
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="funcPath" />
+      <option name="funcPort" value="0" />
+      <option name="functionHostArguments" />
+      <option name="hostJsonPath" />
+      <option name="insightsName" />
+      <option name="instrumentationKey" />
+      <option name="javaVersion" />
+      <option name="localSettingsJsonPath" />
+      <option name="moduleName" />
+      <option name="os" />
+      <option name="pricingTier" />
+      <option name="providerMap">
+        <map />
+      </option>
+      <option name="region" />
+      <option name="resourceGroup" />
+      <option name="stagingFolder" />
+      <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 8.5.78" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.78" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="11">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
@@ -229,7 +253,8 @@
       <workItem from="1678143465208" duration="18438000" />
       <workItem from="1678407808176" duration="3930000" />
       <workItem from="1679248587051" duration="22096000" />
-      <workItem from="1679332549445" duration="44355000" />
+      <workItem from="1679332549445" duration="62315000" />
+      <workItem from="1680114499359" duration="5816000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1674610505060</created>
@@ -329,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679873580210</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="adding a album servlet 2">
+      <created>1680042298046</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680042298046</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +392,8 @@
     <MESSAGE value="some fun stuff 2" />
     <MESSAGE value="some fun stuff 3" />
     <MESSAGE value="adding a album servlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding a album servlet" />
+    <MESSAGE value="adding a album servlet 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding a album servlet 2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

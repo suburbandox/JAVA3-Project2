@@ -6,13 +6,12 @@ import org.apache.hc.core5.http.ParseException;
 import se.michaelthelin.spotify.SpotifyApi;
 import se.michaelthelin.spotify.exceptions.SpotifyWebApiException;
 import se.michaelthelin.spotify.model_objects.credentials.ClientCredentials;
-import se.michaelthelin.spotify.model_objects.specification.Album;
-import se.michaelthelin.spotify.model_objects.specification.AlbumSimplified;
-import se.michaelthelin.spotify.model_objects.specification.Artist;
-import se.michaelthelin.spotify.model_objects.specification.Paging;
+import se.michaelthelin.spotify.model_objects.specification.*;
 import se.michaelthelin.spotify.requests.authorization.client_credentials.ClientCredentialsRequest;
+import se.michaelthelin.spotify.requests.data.albums.GetAlbumsTracksRequest;
 import se.michaelthelin.spotify.requests.data.artists.GetArtistsAlbumsRequest;
 import se.michaelthelin.spotify.requests.data.search.simplified.SearchArtistsRequest;
+import se.michaelthelin.spotify.requests.data.tracks.GetTrackRequest;
 
 import java.io.IOException;
 import java.util.concurrent.CancellationException;
@@ -78,7 +77,7 @@ public class MySpotify {
                 .build();
         GetArtistsAlbumsRequest getArtistsAlbumsRequest = spotifyApi.getArtistsAlbums(artist)
 //          .album_type("album")
-//          .limit(10)
+          .limit(40)
 //          .offset(0)
 //          .market(CountryCode.SE)
                 .build();
@@ -99,4 +98,57 @@ public class MySpotify {
         }
         return  albums;
     }
+
+    public static TrackSimplified[] getTracks(String album) {
+        SpotifyApi spotifyApi = new SpotifyApi.Builder()
+                .setAccessToken(getAccessToken())
+                .build();
+        GetAlbumsTracksRequest getAlbumsTracksRequest = spotifyApi.getAlbumsTracks(album)
+//          .limit(10)
+//          .offset(0)
+//          .market(CountryCode.SE)
+                .build();
+        TrackSimplified[] tracks = null;
+        try {
+            final CompletableFuture<Paging<TrackSimplified>> pagingFuture = getAlbumsTracksRequest.executeAsync();
+
+            // Thread free to do other tasks...
+
+            // Example Only. Never block in production code.
+            final Paging<TrackSimplified> trackSimplifiedPaging = pagingFuture.join();
+            tracks =trackSimplifiedPaging.getItems();
+            System.out.println("Total: " + trackSimplifiedPaging.getTotal());
+        } catch (CompletionException e) {
+            System.out.println("Error: " + e.getCause().getMessage());
+        } catch (CancellationException e) {
+            System.out.println("Async operation cancelled.");
+        }
+        return  tracks;
+    }
+
+    public static String getData(String id) {
+        SpotifyApi spotifyApi = new SpotifyApi.Builder()
+                .setAccessToken(getAccessToken())
+                .build();
+        GetTrackRequest getTrackRequest = spotifyApi.getTrack(id)
+//          .market(CountryCode.SE)
+                .build();
+        String data = null;
+        try {
+            final CompletableFuture<Track> trackFuture = getTrackRequest.executeAsync();
+
+            // Thread free to do other tasks...
+
+            // Example Only. Never block in production code.
+            final Track track = trackFuture.join();
+            data =track.getUri();
+            System.out.println("Name: " + track.getName());
+        } catch (CompletionException e) {
+            System.out.println("Error: " + e.getCause().getMessage());
+        } catch (CancellationException e) {
+            System.out.println("Async operation cancelled.");
+        }
+        return  data;
+    }
+
 }
