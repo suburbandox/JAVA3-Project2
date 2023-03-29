@@ -9,19 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3781e5ed-0f4d-4c51-b60a-537abf9ef55f" name="Changes" comment="adding a album servlet 2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/MessageEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/MessageEndpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/SongServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/TrackServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/data.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/tracks.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/spotify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fun_stuff/ArtistServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/ArtistServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fun_stuff/MySpotify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/MySpotify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/albums.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/albums.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/chat.js" afterDir="false" />
+    <list default="true" id="3781e5ed-0f4d-4c51-b60a-537abf9ef55f" name="Changes" comment="adding a album servlet 3">
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/spotify.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/spotify.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +243,7 @@
       <workItem from="1678407808176" duration="3930000" />
       <workItem from="1679248587051" duration="22096000" />
       <workItem from="1679332549445" duration="62315000" />
-      <workItem from="1680114499359" duration="5816000" />
+      <workItem from="1680114499359" duration="7489000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1674610505060</created>
@@ -361,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680042298046</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="adding a album servlet 3">
+      <created>1680123707052</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1680123707052</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,7 +389,8 @@
     <MESSAGE value="some fun stuff 3" />
     <MESSAGE value="adding a album servlet" />
     <MESSAGE value="adding a album servlet 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding a album servlet 2" />
+    <MESSAGE value="adding a album servlet 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding a album servlet 3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
