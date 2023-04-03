@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="java3-project2:war exploded" />
+      <artifact name="java3-project2:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3781e5ed-0f4d-4c51-b60a-537abf9ef55f" name="Changes" comment="adding a album servlet 3">
+    <list default="true" id="3781e5ed-0f4d-4c51-b60a-537abf9ef55f" name="Changes" comment="adding a album servlet 4">
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fun_stuff/AlbumsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/AlbumsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fun_stuff/MySpotify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/MySpotify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fun_stuff/SongServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/SongServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fun_stuff/TrackServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/TrackServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/albums.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/albums.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/artist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/artist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/data.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/data.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/tracks.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/tracks.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/spotify.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/spotify.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +55,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectId" id="2KnHBSts3VevQ6Fe063BPRpPKVf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -243,7 +254,11 @@
       <workItem from="1678407808176" duration="3930000" />
       <workItem from="1679248587051" duration="22096000" />
       <workItem from="1679332549445" duration="62315000" />
-      <workItem from="1680114499359" duration="7489000" />
+      <workItem from="1680114499359" duration="11408000" />
+      <workItem from="1680315439094" duration="14000" />
+      <workItem from="1680361056584" duration="4083000" />
+      <workItem from="1680393169375" duration="1966000" />
+      <workItem from="1680476052847" duration="5290000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1674610505060</created>
@@ -357,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680123707052</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="adding a album servlet 4">
+      <created>1680126840141</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1680126840141</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +412,8 @@
     <MESSAGE value="adding a album servlet" />
     <MESSAGE value="adding a album servlet 2" />
     <MESSAGE value="adding a album servlet 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding a album servlet 3" />
+    <MESSAGE value="adding a album servlet 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding a album servlet 4" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

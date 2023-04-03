@@ -12,6 +12,7 @@
 <%@ page import="se.michaelthelin.spotify.model_objects.specification.AlbumSimplified" %>
 
 <%
+    String q = (String)request.getAttribute("album");
     String artist = (String)request.getAttribute("artist");
     AlbumSimplified[] albums = (AlbumSimplified[])request.getAttribute("albums");
     int num = 1;
@@ -24,6 +25,7 @@
     <title>CHANGE THE TITLE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
 </head>
 <body>
 
@@ -36,8 +38,8 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search by artist" aria-label="Search" name="q" value="rrr">
+            <form class="d-flex" role="search"action="artist"method="get">
+                <input class="form-control me-2" type="search" placeholder="Search by artist" aria-label="Search" name="q" value="<%= q %>">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </div>
@@ -47,7 +49,7 @@
     <section class="py-5 text-center container">
         <div class="row py-lg-2">
             <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">Albums</h1>
+                <h1 class="fw-light"><%= albums[0].getArtists()[0].getName() %> Albums</h1>
                 <p class="lead text-muted">Click the album's name below to view their track</p>
             </div>
         </div>
@@ -78,7 +80,8 @@
                 <% num++; %>
             </td>
 
-            <td><a href="tracks?album=<%= album.getId() %>"><%= album.getName() %></a></td>
+            <td><a href="tracks?album=<%= album.getId()%>"><%= album.getName() %></a></td>
+<%--            <td><%=album.getArtists()[0].getName()%></td>--%>
 <%--            <td>--%>
 <%--                <% for(String genre: artist.getGenres()) { %>--%>
 <%--                <%= WordUtils.capitalize(genre) %><br>--%>

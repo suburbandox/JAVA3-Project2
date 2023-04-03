@@ -13,7 +13,12 @@ import java.io.IOException;
 public class AlbumsServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String q = request.getParameter("q");
         String artist = request.getParameter("artist");
+        if(q == null) {
+            q = " ";
+        }
+        request.setAttribute("album", q);
         request.setAttribute("artist", artist);
         AlbumSimplified[] albums = MySpotify.getAlbums(artist);
         request.setAttribute("albums", albums);

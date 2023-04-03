@@ -77,7 +77,7 @@ public class MySpotify {
                 .build();
         GetArtistsAlbumsRequest getArtistsAlbumsRequest = spotifyApi.getArtistsAlbums(artist)
 //          .album_type("album")
-          .limit(40)
+          .limit(50)
 //          .offset(0)
 //          .market(CountryCode.SE)
                 .build();

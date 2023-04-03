@@ -7,8 +7,10 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
+    String q = (String)request.getAttribute("track");
     String album = (String)request.getAttribute("album");
     TrackSimplified[] tracks = (TrackSimplified[])request.getAttribute("tracks");
+    int num = 1;
 %>
 <!doctype html>
 <html lang="en">
@@ -29,8 +31,8 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search by artist" aria-label="Search" name="q" value="rrr">
+            <form class="d-flex" role="search"action="artist"method="get">
+                <input class="form-control me-2" type="search" placeholder="Search by artist" aria-label="Search" name="q" value="<%= q %>">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </div>
@@ -41,8 +43,8 @@
     <section class="py-5 text-center container">
         <div class="row py-lg-2">
             <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light"><%= album%></h1>
-                <p class="lead text-muted">Click the album's name below to view their track</p>
+                <h1 class="fw-light">Tracks</h1>
+                <p class="lead text-muted">Click the track's name below to listen to it</p>
             </div>
         </div>
     </section>
@@ -51,6 +53,7 @@
         <thead>
         <tr>
 <%--            <th scope="col">Image</th>--%>
+            <th scope="col">#</th>
             <th scope="col">Name</th>
             <%--            <th scope="col">Genres</th>--%>
             <%--            <th scope="col">Followers</th>--%>
@@ -60,6 +63,7 @@
         </thead>
         <tbody class="table-group-divider">
         <% for(TrackSimplified track: tracks) { %>
+
         <tr>
 <%--            <td>--%>
 <%--                <% if(album.getImages().length > 0) { %>--%>
@@ -68,6 +72,7 @@
 <%--                <img src="https://picsum.photos/id/56/100/75" alt="<%= album.getName() %>">--%>
 <%--                <% } %>--%>
 <%--            </td>--%>
+            <td><%=num%> </td>
             <td><a href="data?track=<%= track.getId() %>"><%= track.getName()%></a></td>
             <%--            <td>--%>
             <%--                <% for(String genre: artist.getGenres()) { %>--%>
@@ -82,6 +87,8 @@
             <%--                <a class="btn btn-success" href="<%= artist.getExternalUrls().getExternalUrls().get("spotify") %>" target="_blank" role="button">See more info</a>--%>
             <%--            </td>--%>
         </tr>
+        <% num++; %>
+
         <% } %>
         </tbody>
     </table>

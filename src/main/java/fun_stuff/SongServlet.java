@@ -11,7 +11,12 @@ import java.io.IOException;
 public class SongServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String q = request.getParameter("q");
         String track = request.getParameter("track");
+        if(q == null) {
+            q = " ";
+        }
+        request.setAttribute("song", q);
         request.setAttribute("track", track);
         String data = MySpotify.getData(track);
         request.setAttribute("data", data);

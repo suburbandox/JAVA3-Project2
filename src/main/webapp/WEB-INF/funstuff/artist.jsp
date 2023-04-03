@@ -24,7 +24,7 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
       </ul>
-      <form class="d-flex" role="search">
+      <form class="d-flex" role="search" >
         <input class="form-control me-2" type="search" placeholder="Search by artist" aria-label="Search" name="q" value="<%= q %>">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>

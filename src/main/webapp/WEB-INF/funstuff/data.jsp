@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%
+    String q = (String)request.getAttribute("song");
     String track = (String)request.getAttribute("data");
 
 %>
@@ -31,15 +32,15 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search by artist" aria-label="Search" name="q" value="rrr">
+      <form class="d-flex" role="search"action="artist"method="get">
+        <input class="form-control me-2" type="search" placeholder="Search by artist" aria-label="Search" name="q" value="<%= q %>">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
   </div>
 </nav>
 <div id="url" data="<%= track %>" ></div>
-<h1 id="u"><%= track %></h1>
+<h1 id="u" style="display: none"><%= track %></h1>
 <div id="embed-iframe"></div>
 
 

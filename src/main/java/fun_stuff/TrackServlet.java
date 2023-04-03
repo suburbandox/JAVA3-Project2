@@ -12,7 +12,12 @@ import java.io.IOException;
 public class TrackServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String q = request.getParameter("q");
         String album = request.getParameter("album");
+        if(q == null) {
+            q = " ";
+        }
+        request.setAttribute("track", q);
         request.setAttribute("album", album);
         TrackSimplified[] tracks = MySpotify.getTracks(album);
         request.setAttribute("tracks", tracks);
