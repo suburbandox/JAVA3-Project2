@@ -2,25 +2,50 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="java3-project2:war" />
+      <artifact name="java3-project2:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3781e5ed-0f4d-4c51-b60a-537abf9ef55f" name="Changes" comment="adding a album servlet 4">
+    <list default="true" id="3781e5ed-0f4d-4c51-b60a-537abf9ef55f" name="Changes" comment="adding a album servlet 5">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch5/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch5/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch5/LogoutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch5/UserProfileServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/communication/AzureComm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/TicTacToeEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/TicTacToeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ch5/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ch5/user-profile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/tictactoe.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file-not-found2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/tic-tac-toe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/tic-tac-toe.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/java3_project2_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/java3_project2_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fun_stuff/AlbumsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/AlbumsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fun_stuff/MySpotify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/MySpotify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fun_stuff/SongServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/SongServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fun_stuff/TrackServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/TrackServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java3-project2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java3-project2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch5/AddUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch5/AddUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch5/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch5/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch5/ViewUsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch5/ViewUsersServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data_access/DAO_MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data_access/DAO_MySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data_access/UserDAO_MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data_access/UserDAO_MySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fun_stuff/MessageEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fun_stuff/MessageEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/twilio/SMSOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/communication/SMSOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/twilio/Twilio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/communication/Twilio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ch5/add-user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ch5/add-user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ch5/view-users.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ch5/view-users.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/albums.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/albums.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/artist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/artist.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/data.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/data.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/tracks.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/funstuff/tracks.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/spotify.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/spotify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/chat.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +58,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
-        <option value="CSS File" />
+        <option value="HTML File" />
         <option value="Jsp File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="Class" />
       </list>
@@ -55,7 +80,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectId" id="2KnHBSts3VevQ6Fe063BPRpPKVf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -68,28 +92,37 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/clwoo/Desktop/Ethan School/Spring 2023/java3/java3-project2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/clwoo/Desktop/java3-klinecookbook&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\clwoo\Desktop\Ethan School\Spring 2023\java3\java3-project2\src\main\webapp\WEB-INF" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\clwoo\Desktop\Ethan School\Spring 2023\java3\java3-project2\src\main\webapp" />
       <recent name="C:\Users\clwoo\Desktop\Ethan School\Spring 2023\java3\java3-project2\src\main\webapp\image" />
       <recent name="C:\Users\clwoo\Desktop\Ethan School\Spring 2023\java3\java3-project2\src\main\webapp\WEB-INF\funstuff" />
       <recent name="C:\Users\clwoo\Desktop\Ethan School\Spring 2023\java3\java3-project2\src\main\resources" />
       <recent name="C:\Users\clwoo\Desktop\Ethan School\Spring 2023\java3\java3-project2\src\main\webapp\WEB-INF" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.78">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -118,6 +151,19 @@
       <option name="resourceGroup" />
       <option name="stagingFolder" />
       <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AzureComm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="communication.AzureComm" />
+      <module name="java3-project2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="communication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -212,6 +258,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AzureComm" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -258,7 +309,44 @@
       <workItem from="1680315439094" duration="14000" />
       <workItem from="1680361056584" duration="4083000" />
       <workItem from="1680393169375" duration="1966000" />
-      <workItem from="1680476052847" duration="5290000" />
+      <workItem from="1680476052847" duration="19182000" />
+      <workItem from="1680660209002" duration="1382000" />
+      <workItem from="1680719515602" duration="10785000" />
+      <workItem from="1681142006228" duration="488000" />
+      <workItem from="1681144879179" duration="9067000" />
+      <workItem from="1681310797101" duration="8678000" />
+      <workItem from="1681333396993" duration="27000" />
+      <workItem from="1681333493367" duration="53000" />
+      <workItem from="1681333569008" duration="19000" />
+      <workItem from="1681333605722" duration="13000" />
+      <workItem from="1681333995860" duration="18000" />
+      <workItem from="1681334221456" duration="112000" />
+      <workItem from="1681334593938" duration="45000" />
+      <workItem from="1681334995456" duration="266000" />
+      <workItem from="1681335805658" duration="17000" />
+      <workItem from="1681336554505" duration="931000" />
+      <workItem from="1681413834130" duration="12179000" />
+      <workItem from="1681568779977" duration="619000" />
+      <workItem from="1681654986486" duration="6000" />
+      <workItem from="1681751627650" duration="1283000" />
+      <workItem from="1681752927393" duration="5091000" />
+      <workItem from="1681768387839" duration="13247000" />
+      <workItem from="1681855967437" duration="57000" />
+      <workItem from="1681856207934" duration="7757000" />
+      <workItem from="1681930959643" duration="3165000" />
+      <workItem from="1681956990154" duration="10000" />
+      <workItem from="1681998377225" duration="1197000" />
+      <workItem from="1682357175711" duration="5592000" />
+      <workItem from="1682460517114" duration="5351000" />
+      <workItem from="1682537726382" duration="2085000" />
+      <workItem from="1682961502226" duration="519000" />
+      <workItem from="1682962062610" duration="555000" />
+      <workItem from="1682962683729" duration="173000" />
+      <workItem from="1682963400764" duration="1358000" />
+      <workItem from="1682968074505" duration="16000" />
+      <workItem from="1683131193458" duration="57000" />
+      <workItem from="1683145296845" duration="384000" />
+      <workItem from="1683145789794" duration="45000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1674610505060</created>
@@ -379,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680126840141</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="adding a album servlet 5">
+      <created>1680482495000</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1680482495000</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,7 +508,8 @@
     <MESSAGE value="adding a album servlet 2" />
     <MESSAGE value="adding a album servlet 3" />
     <MESSAGE value="adding a album servlet 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding a album servlet 4" />
+    <MESSAGE value="adding a album servlet 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding a album servlet 5" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

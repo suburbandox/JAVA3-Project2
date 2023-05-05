@@ -11,13 +11,15 @@
     String q = (String)request.getAttribute("song");
     String track = (String)request.getAttribute("data");
 
+
 %>
+
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CHANGE THE TITLE</title>
+    <title>Song</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
@@ -39,6 +41,7 @@
     </div>
   </div>
 </nav>
+<button onclick="history.back()">Go Back</button>
 <div id="url" data="<%= track %>" ></div>
 <h1 id="u" style="display: none"><%= track %></h1>
 <div id="embed-iframe"></div>

@@ -1,4 +1,4 @@
-package twilio;
+package communication;
 
 import com.twilio.exception.ApiException;
 import com.twilio.rest.api.v2010.account.Call;
@@ -10,8 +10,6 @@ import com.twilio.twiml.voice.Say;
 import com.twilio.type.PhoneNumber;
 import com.twilio.type.Twiml;
 import io.github.cdimascio.dotenv.Dotenv;
-
-import java.io.Console;
 
 public class Twilio {
     private String fromPhone;
